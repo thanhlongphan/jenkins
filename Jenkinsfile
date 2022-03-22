@@ -4,7 +4,8 @@ pipeline {
     stage('Clone the repo') {
       steps {
         echo 'Clone the repo'
-        git 'https://github.com/thanhlongphan/jenkins.git'
+		sh 'rm -rf jenkins'
+        sh 'git clone https://github.com/thanhlongphan/jenkins.git'
       }
     }
   }
