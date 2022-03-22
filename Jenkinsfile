@@ -9,7 +9,7 @@ pipeline {
   }
   post {
     always {
-      emailext body: 'Summary', subject: 'Pipeline Status', to: 'tlong.phan92@gmail.com'
+      emailext body: 'Summary', subject: 'Pipeline Status', to: 'lphan@haeger-consulting.de'
     }
   }
 }
