@@ -8,7 +8,7 @@ pipeline {
     }
   }
   post {
-    always {
+    failure {
       emailext body: 'Summary', subject: 'Pipeline Status', to: 'lphan@haeger-consulting.de'
     }
   }
