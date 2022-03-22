@@ -7,4 +7,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      emailext body: 'Summary', subject: 'Pipeline Status', to: 'tlong.phan92@gmail.com'
+    }
+  }
 }
